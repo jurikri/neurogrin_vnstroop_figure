@@ -25,8 +25,13 @@ print(msdict.keys())
 epochs = msdict['epochs']
 mean_train_loss = msdict['mean_train_loss']
 sem_train_loss = msdict['sem_train_loss']
+mean_val_loss = msdict['mean_val_loss']
+sem_val_loss = msdict['sem_val_loss']
 scatter_x = msdict['scatter_x']
 scatter_y = msdict['scatter_y']
+trendline = msdict['trendline']
+
+
 
 color1 = '#7fdada'
 color2 = '#FF6961'

@@ -18,9 +18,10 @@ if False:
     with open(spath + 'vnstroop_figure4.pickle', 'wb') as file:
         pickle.dump(msdict, file)
     
-with open(spath + 'vnstroop_figure4.pickle', 'rb') as file:
+with open('vnstroop_figure4.pickle', 'rb') as file:
     msdict = pickle.load(file)
 
+print(msdict.keys())
 epochs = msdict['epochs']
 mean_train_loss = msdict['mean_train_loss']
 sem_train_loss = msdict['sem_train_loss']
@@ -85,7 +86,7 @@ for ax in axs.flat:
         spine.set_linewidth(0.2)
 
 if True:
-    fsave = r'C:\\SynologyDrive\worik in progress\혁창패\임상실험 논문작성\result-figure'
-    fsave2 = fsave + '\\Figure4.png'
+    # fsave = r'C:\\SynologyDrive\worik in progress\혁창패\임상실험 논문작성\result-figure'
+    fsave2 = 'Figure4.png'
     plt.savefig(fsave2, dpi=200 ,bbox_inches='tight', pad_inches=0.1)
     plt.show()
